@@ -1,0 +1,12 @@
+.container{
+    padding: 2rem 0;
+}
+.table, table th, table tr, table td{
+    border: 1px solid #d3d3d3;
+}
+table tr, table td, table th{
+    padding: 0.5rem;
+}
+table tr:first-child{
+    background-color: #d3d3d3;
+}

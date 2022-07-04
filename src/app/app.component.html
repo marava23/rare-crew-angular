@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th class="text-center">Total Time in Month</th>
+            <th class="text-center">Actions</th>
+        </tr>
+        <tr *ngFor="let employee of empoloyeesFinal">
+            <td [style.background]="employee.TotalHours < 100 ? '#e4717a' : 'default'">{{employee.EmployeeName}}</td>
+            <td [style.background]="employee.TotalHours < 100 ? '#e4717a' : 'default'" class="text-center">{{employee.TotalHours}}</td>
+            <td [style.background]="employee.TotalHours < 100 ? '#e4717a' : 'default'" class="text-center"><a href="">Edit</a></td>
+        </tr>
+    </table>
+</div>
+<div class="container">
+    <google-chart [data]="pieChart">
+        
+    </google-chart>
+</div>
